@@ -96,8 +96,6 @@ small {
    HEADER
 ================================== */
 .header-container {
-  overflow: hidden;
-  border: 3px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,9 +110,31 @@ small {
   display: none;
 }
 
+.desktop-nav {
+  display: flex;
+  gap: 1.5rem;
+  li {
+    list-style: none;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    a {
+      text-decoration: none;
+      color: var(--text-color);
+      &:visited {
+        color: red;
+      }
+    }
+  }
+}
+
 .mobile-container {
   margin-top: 0.5rem;
+  cursor: pointer;
 }
+
 .burger-container {
   position: relative;
   img {
@@ -125,16 +145,27 @@ small {
 .mobile-nav {
   position: absolute;
   top: 3rem;
-  /* display: none; */
+  display: none;
   font-size: 0.75rem;
-
   li {
     list-style: none;
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
     a {
       text-decoration: none;
       color: var(--text-color);
+      &:visited {
+        color: red;
+      }
     }
   }
+}
+
+/* Mobile navigation ausführen */
+.mobile-active {
+  display: block;
 }
 
 /* ================================
@@ -142,6 +173,9 @@ small {
 ================================== */
 
 @media (min-width: 768px) {
+  .desktop-container {
+    display: block;
+  }
   .mobile-container {
     display: none;
   }
