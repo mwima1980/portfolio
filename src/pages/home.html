@@ -12,8 +12,8 @@
     <title>Startseite</title>
   </head>
   <body>
-    <header>
-      <nav class="container header-container">
+    <header class="header-container">
+      <nav class="container nav-container">
         <img src="../assets/images/fav/compony-logo.svg" alt="Firmenlogo" />
         <div class="desktop-container">
           <ul class="desktop-nav">
@@ -37,14 +37,34 @@
           </div>
           <ul class="mobile-nav" id="mobile">
             <li><a href="../pages/home.html">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="../pages/aboutme.html" target="_blank">About me</a>
+            </li>
+            <li><a href="../pages/service.html" target="_blank">Service</a></li>
+            <li>
+              <a href="../pages/portfolio.html" target="_blank">Portfolio</a>
+            </li>
+            <li><a href="../pages/contact.html" target="_blank">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
+    <section class="hero-container">
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="title-container">
+          <h1>Willkommen auf meiner Seite</h1>
+        </div>
+        <div class="introduce-container">
+          <p>
+            Hey, ich bin Maik Wildermann – Freelancer, Ideenschmied und
+            Problemlöser für digitale Projekte. Ich mache Dinge, die nicht nur
+            funktionieren, sondern Eindruck hinterlassen. Bereit, etwas Cooles
+            zusammen zu starten?
+          </p>
+        </div>
+      </div>
+    </section>
     <script src="../js/main.js"></script>
   </body>
 </html>
